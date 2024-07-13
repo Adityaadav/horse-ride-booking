@@ -1,0 +1,26 @@
+.horse-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.horse-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.horse-card h2 {
+    padding: 10px;
+    background: #f4f4f4;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}

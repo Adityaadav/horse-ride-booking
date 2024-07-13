@@ -1,0 +1,46 @@
+.booking-confirmation-page {
+    background-image: url('C:\Users\Aditya\horse-ride-booking\public\images\ll.jpg'); /* Adjust the path based on your project structure */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.booking-confirmation {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    display: none; /* Initially hidden */
+}
+
+.booking-confirmation h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.booking-confirmation p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.booking-confirmation button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-confirmation button:hover {
+    background-color: #0056b3;
+}
+
