@@ -1,6 +1,6 @@
 Horse Ride Booking Website 
 
-Tech Stack:
+Tech Stack used:
 Javascript 
 Reactjs 
 Html
