@@ -61,7 +61,7 @@ const BookingForm = () => {
             }
         }
 
-        if (startHour >= endHour || endHour - startHour != 1) {
+        if (startHour >= endHour || endHour - startHour !== 1) {
             alert('Please select a valid one-hour time slot.');
             return;
         }
@@ -70,11 +70,22 @@ const BookingForm = () => {
         dispatch({ type: 'SUBMIT_BOOKING', payload: formData });
 
         // Redirect to the confirmation page
-        navigate('/confirmation/${formData.horse}');
+        navigate(`/confirmation/${formData.horse}`);
     };
 
     return (
-        <div className="booking-form-container">
+        <div 
+            className="booking-form-container" 
+            style={{ 
+                backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg12.jpg'})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                minHeight: '100vh',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+            }}
+        >
             {showForm && (
                 <motion.form 
                     onSubmit={handleSubmit} 
@@ -131,4 +142,5 @@ const BookingForm = () => {
 };
 
 export default BookingForm;
+
 
