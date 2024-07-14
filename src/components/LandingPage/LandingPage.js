@@ -23,7 +23,20 @@ const LandingPage = () => {
     }, []);
 
     return (
-        <div className="landing-page">
+        <div 
+            className="landing-page"
+            style={{ 
+                backgroundImage: `url(${process.env.PUBLIC_URL + '/images/gene-devine-YwjY-8Ivag4-unsplash.jpg'})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                minHeight: '100vh',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                padding: '20px'
+            }}
+        >
             <motion.header 
                 className="header"
                 initial={{ opacity: 0, y: -50 }}
