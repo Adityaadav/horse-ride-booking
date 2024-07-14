@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import './BookingConfirmation.css';
 
 const BookingConfirmation = ({ horse, date }) => {
-    
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -14,7 +13,15 @@ const BookingConfirmation = ({ horse, date }) => {
     }, []);
 
     return (
-        <div className="booking-confirmation-page">
+        <div 
+            className="booking-confirmation-page" 
+            style={{ 
+                backgroundImage: `url(${process.env.PUBLIC_URL}/images/ll.jpg)`, 
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                minHeight: '100vh'
+            }}
+        >
             <motion.div
                 className="booking-confirmation"
                 id="confirmation-popup"
@@ -23,7 +30,7 @@ const BookingConfirmation = ({ horse, date }) => {
                 transition={{ duration: 0.5 }}
             >
                 <h2>Booking Confirmed!</h2>
-                <p>Thank you for booking a ride , Enjoy your Ride!</p>
+                <p>Thank you for booking a ride, Enjoy your Ride with {horse}!</p>
                 <button
                     onClick={() =>
                         window.open(
