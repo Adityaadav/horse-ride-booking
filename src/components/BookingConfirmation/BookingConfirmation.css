@@ -1,5 +1,5 @@
 .booking-confirmation-page {
-    background-image: url('C:\Users\Aditya\horse-ride-booking\public\images\ll.jpg'); /* Adjust the path based on your project structure */
+    background-image: url('public\images\ll.jpg'); /* Adjust the path based on your project structure */
     background-size: cover;
     background-position: center;
     min-height: 100vh;
